@@ -2,12 +2,13 @@
 import DefaultLayout from '@layouts/default'
 import Link from 'next/link'
 import { getConfig, getAllPosts } from '@api'
+import styles from '../styles/index.module.scss'
 
 export default function Blog(props) {
     return (
         <DefaultLayout title={props.title} description={props.description}>
             <p>List of posts:</p>
-            <ul>
+            <ul className="text-lg cursor-pointer">
                 {props.posts.map(function(post, idx) {
                     return (
                         <li key={idx}>
