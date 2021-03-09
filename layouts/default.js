@@ -9,9 +9,7 @@ export default function DefaultLayout(props) {
                 <title>{props.title}</title>
                 <meta name='description' content={props.description}/>
             </Head>
-            <Header/>
             {props.children}
-            <Footer/>
         </main>
     )
 }
