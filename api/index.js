@@ -1,6 +1,7 @@
 import matter from 'gray-matter'
 import yaml from 'js-yaml'
 import markdownToHtml from "../lib/markdownToHtml";
+import htmlToReactElement from "../lib/htmlToReactElement";
 
 export async function getConfig() {
     const config = await import(`../config.yml`)

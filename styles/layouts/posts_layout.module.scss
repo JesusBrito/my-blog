@@ -12,7 +12,8 @@
 
 .posts_layout__header {
     grid-area: header;
-    background-color: $white;
+    background-color: gray;
+    box-shadow: 50px 10px #888888;
 }
 
 .posts_layout__header_brand_container {
@@ -25,11 +26,12 @@
 
 .posts_layout__sidenav {
     grid-area: sidenav;
-    background: $primary;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    background: $white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-left: solid 1px #0c5460 ;
+    padding: 10px;
 }
 
 .posts_layout__main {

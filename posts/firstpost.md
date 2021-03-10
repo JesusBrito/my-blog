@@ -1,14 +1,16 @@
 ---
-title:  "Welcome to Next.js blog!"
-coverImage: '/assets/blog/hello-world/cover.jpg'
+title:  "State of JS 2020: Typescript y Svelte."
+coverImage: '/assets/blog/firtspost/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
-    name: JJ Kasper
-    picture: '/assets/blog/authors/jj.jpeg'
+    name: Jesus Brito
+    picture: '/assets/blog/author/profile.jpg'
 ogImage:
-    url: '/assets/blog/dynamic-routing/cover.jpg'
+    url: '/assets/blog/firtspost/cover.jpg'
 ---
-# State of JS 2020: Typescript y Svelte
+# Holi
+
+
 
 Hace unos días salieron los resultados de la encuesta ["State of JS 2020"](https://2020.stateofjs.com/es-ES/), una famosa encuesta que año tras año recopila información sobre el estado actual de Javascript en el mundo.
 
@@ -23,7 +25,7 @@ Estas dos tecnologías fueron las ganadoras en porcentaje de satisfacción en su
 ![Frontend Frameworks](./frontend.png)
 
 ## Typescript
-
+- - - -
 Typescript es un superset de Javascript, es decir, posee todas las características de JS pero nos brinda algunas más. La principal de ellas es el tipado estático.
 
 ```javascript
@@ -45,7 +47,7 @@ Si no llevas mucho tiempo programando en JS o si no has trabajado en alguna apli
 Te recomiendo que te des una vuelta por su [página oficial](https://www.typescriptlang.org/) y le des una oportunidad. Estoy seguro que no te arrepentirás 😉.
 
 ## Svelte
-
+- - -
 Svelte es el chico nuevo del barrio, el más reciente de los frameworks frontend (y si, otro más que hay que aprender 🙄).
 
 ![Furious](./furious.gif)
@@ -78,10 +80,9 @@ En caso de querer estilos, los ponemos dentro de un `<style>` y no debemos preoc
 Y finalmente, todo lo que no sea JS ni CSS, se pone libremente debajo. Así de fácil, así de sencillo.
 Si esto te sorprendió, te recomiendo echarle un ojito a su [documentación](https://svelte.dev/) 👁.
 
-::: tip
-Por cierto, mi página personal [fergv.com](https://fergv.com) está hecha con Svelte y [Sapper](https://sapper.svelte.dev/) (el framework de Svelte). Te dejo el link al [repositorio](https://github.com/FerGv/FerGv.github.io) por si quieres revisar a detalle.
-:::
 
 Bueno, esto es todo por hoy, espero hayas disfrutado la lectura y nos vemos en el siguiente artículo.
 
 Happy coding! 🥸
+
+@[twitter](1|Titulo|Contenido)

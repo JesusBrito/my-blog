@@ -6,6 +6,7 @@ import styles from '../styles/layouts/posts_layout.module.scss'
 import Header from "@includes/header";
 import Footer from "@includes/footer";
 import PostHeader from "@includes/post-header";
+import htmlToReactElement from "../lib/htmlToReactElement";
 
 export default function PostLayout(props) {
     return (
@@ -36,8 +37,6 @@ export default function PostLayout(props) {
                 <article className={styles.posts_layout__main}>
                     <main className={styles.posts_layout__wrapper_container}>
                         <div className={styles.posts_layout__main_container}>
-                            <h1>{props.title}</h1>
-
                             <PostHeader
                                 title={props.title}
                                 coverImage={props.coverImage}
@@ -45,8 +44,9 @@ export default function PostLayout(props) {
                                 author={props.author}
                             />
                             {/*<ReactMarkdown plugins={[gfm]} children={props.content} />*/}
-
-                            <div dangerouslySetInnerHTML={{__html: props.content}}/>
+                            {/*<div dangerouslySetInnerHTML={{__html: props.content}}/>*/}
+                            <div>{    htmlToReactElement(props.content || '')
+                                }</div>
                             <hr/>
                             <div><Link href='/'><a>Home</a></Link></div>
 

@@ -1,12 +1,12 @@
 ---
 title:  "second version of blog"
-coverImage: '/assets/blog/hello-world/cover.jpg'
+coverImage: '/assets/blog/firtspost/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
-    name: JJ Kasper
-    picture: '/assets/blog/authors/jj.jpeg'
+    name: Jesus Brito
+    picture: '/assets/blog/author/profile.jpg'
 ogImage:
-    url: '/assets/blog/dynamic-routing/cover.jpg'
+    url: '/assets/blog/firtspost/cover.jpg'
 ---
 
 
