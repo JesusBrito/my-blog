@@ -1,5 +1,4 @@
 import matter from 'gray-matter'
-import marked from 'marked'
 import yaml from 'js-yaml'
 import markdownToHtml from "../lib/markdownToHtml";
 
