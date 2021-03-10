@@ -7,8 +7,6 @@ import Header from "@includes/header";
 import Footer from "@includes/footer";
 import PostHeader from "@includes/post-header";
 
-const gfm = require('remark-gfm')
-
 export default function PostLayout(props) {
     return (
         <DefaultLayout>
