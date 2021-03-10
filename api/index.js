@@ -1,7 +1,7 @@
 import matter from 'gray-matter'
 import marked from 'marked'
 import yaml from 'js-yaml'
-
+import markdownToHtml from "../lib/markdownToHtml";
 
 export async function getConfig() {
     const config = await import(`../config.yml`)
@@ -23,13 +23,18 @@ export async function getAllPosts() {
     return posts;
 }
 
-export async function getPostBySlug(slug) {
+export async function getPostBySlug(slug, fields = []) {
     const fileContent = await import(`../posts/${slug}.md`)
-    const meta = matter(fileContent.default)
-    const content = marked(meta.content)
+    const { data, content } = matter(fileContent.default)
+    const html = await markdownToHtml(content || '')
+
     return {
-        title: meta.data.title,
-        content: content
+        title: data.title,
+        content: html,
+        coverImage: data.coverImage,
+        date: data.date,
+        author: data.author,
+        ogImage: data.ogImage,
     }
 }
 

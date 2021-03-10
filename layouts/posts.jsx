@@ -5,13 +5,11 @@ import {DiscussionEmbed} from "disqus-react";
 import styles from '../styles/layouts/posts_layout.module.scss'
 import Header from "@includes/header";
 import Footer from "@includes/footer";
-import {getAllPosts, getConfig} from "@api";
-import {useEffect} from "react";
+import PostHeader from "@includes/post-header";
+
+const gfm = require('remark-gfm')
 
 export default function PostLayout(props) {
-    useEffect(()=>{
-        console.log(props)
-    }, [])
     return (
         <DefaultLayout>
             <div className={styles.posts_layout__grid_container}>
@@ -38,26 +36,37 @@ export default function PostLayout(props) {
                 </aside>
 
                 <article className={styles.posts_layout__main}>
-                    <main className={styles.posts_layout__main_container}>
-                        <h1>{props.title}</h1>
-                        <div dangerouslySetInnerHTML={{__html: props.content}}/>
-                        <hr/>
-                        <div><Link href='/'><a>Home</a></Link></div>
+                    <main className={styles.posts_layout__wrapper_container}>
+                        <div className={styles.posts_layout__main_container}>
+                            <h1>{props.title}</h1>
 
-
-                        <section className={styles.posts_layout__disqus_container}>
-                            <DiscussionEmbed
-                                shortname='blog-jesusbritodeveloper'
-                                config={
-                                    {
-                                        url: "https://blog-jesusbritodeveloper.disqus.com/embed.js",
-                                        identifier: props.title,
-                                        title: "Comentarios",
-                                        language: 'es_MX' //e.g. for Traditional Chinese (Taiwan)
-                                    }
-                                }
+                            <PostHeader
+                                title={props.title}
+                                coverImage={props.coverImage}
+                                date={props.date}
+                                author={props.author}
                             />
-                        </section>
+                            {/*<ReactMarkdown plugins={[gfm]} children={props.content} />*/}
+
+                            <div dangerouslySetInnerHTML={{__html: props.content}}/>
+                            <hr/>
+                            <div><Link href='/'><a>Home</a></Link></div>
+
+
+                            <section className={styles.posts_layout__disqus_container}>
+                                <DiscussionEmbed
+                                    shortname='blog-jesusbritodeveloper'
+                                    config={
+                                        {
+                                            url: "https://blog-jesusbritodeveloper.disqus.com/embed.js",
+                                            identifier: props.title,
+                                            title: "Comentarios",
+                                            language: 'es_MX' //e.g. for Traditional Chinese (Taiwan)
+                                        }
+                                    }
+                                />
+                            </section>
+                        </div>
                     </main>
 
                 </article>
