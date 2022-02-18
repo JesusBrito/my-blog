@@ -1,8 +1,6 @@
-// pages/index.js
-import DefaultLayout from '@layouts/default'
+import DefaultLayout from '@includes/layouts/default'
 import Link from 'next/link'
 import { getConfig, getAllPosts } from '@api'
-import styles from '../styles/index.module.scss'
 
 export default function Blog(props) {
     return (

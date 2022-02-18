@@ -1,4 +1,4 @@
-import styles from '../styles/components/post_header.module.scss'
+import styles from './PostHeader/postHeader.module.scss'
 
 export default function PostTitle({ children }) {
   return (

@@ -1,12 +1,11 @@
-import DefaultLayout from '@layouts/default'
+import DefaultLayout from '@includes/layouts/default'
 import Head from 'next/head'
 import Link from 'next/link'
 import {DiscussionEmbed} from "disqus-react";
-import styles from '../styles/layouts/posts_layout.module.scss'
+import styles from './posts_layout.module.scss'
 import Header from "@includes/header";
 import Footer from "@includes/footer";
-import PostHeader from "@includes/post-header";
-import htmlToReactElement from "../lib/htmlToReactElement";
+import PostHeader from "@includes/PostHeader/postHeader";
 
 export default function PostLayout(props) {
     return (

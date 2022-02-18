@@ -1,5 +1,5 @@
 // _includes/header.jsx
-import styles from "../styles/layouts/posts_layout.module.scss";
+import styles from "./layouts/PostsLayout/posts_layout.module.scss";
 
 export default function Header() {
     return(
