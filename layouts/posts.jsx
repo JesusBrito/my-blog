@@ -14,7 +14,6 @@ export default function PostLayout(props) {
             <div className={styles.posts_layout__grid_container}>
                 <Head>
                     <title>{props.title}</title>
-                    <meta name="google-site-verification" content="z3G5HErEVaY_MrgoEwsTRmsnTB2DiDuzc1ew32EG-WY" />
                 </Head>
                 <Header/>
                 <aside className={styles.posts_layout__sidenav}>
