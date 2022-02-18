@@ -43,9 +43,8 @@ export default function PostLayout(props) {
                                 author={props.author}
                             />
                             {/*<ReactMarkdown plugins={[gfm]} children={props.content} />*/}
-                            {/*<div dangerouslySetInnerHTML={{__html: props.content}}/>*/}
-                            <div>{    htmlToReactElement(props.content || '')
-                                }</div>
+                            <div dangerouslySetInnerHTML={{__html: props.content}}/>
+                            {/*<div>{    htmlToReactElement(props.content || '')}</div>*/}
                             <hr/>
                             <div><Link href='/'><a>Home</a></Link></div>
 

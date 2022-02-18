@@ -90,6 +90,7 @@ table th {
     margin-bottom: 1rem;
     border: 1px solid transparent;
     border-radius: .25rem;
+    font-family: "Montserrat Regular", serif;
 }
 
 .alert-warning {
@@ -108,4 +109,20 @@ table th {
     color: #0c5460;
     background-color: #d1ecf1;
     border-color: #bee5eb;
+}
+
+.alert-info {
+    color: #0DCAF0;
+    background-color: #0DCAF0;
+    border-color: #bee5eb;
+}
+
+.alert-error {
+    background-color: #fcafaf;
+    border-color: #fcafaf;
+}
+
+.alert-success {
+    background-color: #7fc9a6;
+    border-color: #7fc9a6;
 }

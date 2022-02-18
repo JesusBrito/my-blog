@@ -8,8 +8,13 @@ author:
 ogImage:
     url: '/assets/blog/firtspost/cover.jpg'
 ---
-# Holi
+```js
+   let Holi
 
+const x = () => {
+    
+}
+```
 
 
 Hace unos días salieron los resultados de la encuesta ["State of JS 2020"](https://2020.stateofjs.com/es-ES/), una famosa encuesta que año tras año recopila información sobre el estado actual de Javascript en el mundo.

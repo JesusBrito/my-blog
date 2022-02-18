@@ -81,6 +81,90 @@ const name = 'Fer';
 ```
 :::
 
+::: info
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
+::: warning
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
+::: error
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
+::: danger
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
+::: tip
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
+::: success
+El operador Bang Bang realmente es el uso del operador `NOT` dos veces, ya que la primera vez obtenemos el valor booleano contrario y la segunda nos regresa al original.
+
+```js
+const name = 'Fer';
+
+// Primera negación
+!name // 'Fer' -> false
+
+// Segunda negación
+!!name // 'Fer' -> false -> true
+```
+:::
+
 ¿Cuál es mejor? Ninguna. Usa la que más te guste 😉.
 
 Bueno, esto es todo por hoy. Nos vemos en la próxima.
