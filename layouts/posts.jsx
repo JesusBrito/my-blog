@@ -17,7 +17,6 @@ export default function PostLayout(props) {
                 </Head>
                 <Header/>
                 <aside className={styles.posts_layout__sidenav}>
-                    <p>Sidenav</p>
                     <div>
                         <p>List of posts:</p>
                         <ul className="text-lg cursor-pointer">
